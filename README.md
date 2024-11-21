@@ -1,0 +1,5 @@
+# ADAPB Web - ASSOCIAÇÃO DE DEFESA ANIMAL DE PEREIRA BARRETO 
+Projeto de desenvolvimento de Trabalho de Conclusão de Curso Técnico em Desenvolvimento de Sistemas - ETEC de Ilha Solteira - SP
+
+Esse é um projeto de Trabalho de Conclusão de Curso que foi desenvolvido para uma instituição que cuida e trata de animais perdidos, abandonados ou de rua que são posteriormente disponibilizados para adoção na cidade de Pereira Barreto - SP.
+O projeto tem por objetivo divulgar a instituição, aumentando assim sua visibilidade e tornando-a mais popular, especialmente para a população local que reside na cidade e na região. Também faz parte do objetivo auxiliar no sistema administrativo da mesma, de forma que dados como nome, raça, deficiências, estado de vacinação e até mesmo breve descrições dos animais sejam armazenadas e possam ajudar os funcionários (que são em grande parte voluntários) a manterem um melhor controle sobre a saúde e a organização dos animais.

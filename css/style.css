@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font: "Varela Round";
+}
+
+section {
+  min-height: 100vh;
+}
+
+#sobre {
+  background: #0e283c;
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar {
+  position: absolute;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.navbar a {
+  /* color: white; */
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .logo {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 .5em;
+}
+
+.navbar .nav-links ul li a:hover {
+  color: #1de0d3;
+}
+
+.navbar .nav-links ul li.active a {
+  color: #1de0d3;
+  font-weight: bold;
+}
+
+/* Menu Hamburguer */
+.navbar .menu-hamburguer {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 35px;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+  .navbar {
+    background: transparent;
+  }
+
+  #logo {
+    opacity: 0%;
+  }
+
+  .navbar .menu-hamburguer {
+    display: block;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(8px);
+    margin-left: -100%;
+    transition: .35s;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+    transition: .35s;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-height: 80%;
+    jusify-content: space-between; */
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}
+
+.active {
+  font-weight: bold;
+}
+
+.titulo-section {
+  padding-top: 1em;
+}
+
+/* Section inicial */
+#inicio {
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background: url("../assets/img/bg-new.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#inicio h1,
+#inicio .h1 {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#inicio h2,
+#inicio .h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  #inicio h1,
+  #inicio .h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #inicio {
+    height: 100vh;
+    padding: 0;
+  }
+
+  #inicio h1,
+  #inicio .h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+
+  #inicio h2,
+  #inicio .h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+
+.btncolor {
+  background: #64a19d;
+  color: #fff;
+}
+
+.btncolor:hover {
+  background: #50837f;
+  color: #fff;
+  transition: .4s;
+}

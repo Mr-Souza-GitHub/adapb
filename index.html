@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Próprio -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>ADAPB Web</title>
+</head>
+
+<body>
+  <!-- *arrumar carrossel
+    *pag animais memoráveis
+    *pag adoção de animaias
+    *qrcode -->
+
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- <a href="#" class="logo ">ADAPB</a> --> <img id="logo" src="assets/icons/logo.svg" style="width: 15%;">
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="#">Como Ajudar?</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="pages/adocao.php">Adoção</a></li>
+        </ul>
+      </div>
+      <img src="assets/img/menu-btn.png" alt="" class="menu-hamburguer">
+
+      <script>
+        const menuHamburguer = document.querySelector(".menu-hamburguer");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuHamburguer.addEventListener('click', () => {
+          navLinks.classList.toggle("mobile-menu")
+        }
+        );
+      </script>
+    </nav>
+  </header>
+
+  <!-- SECTION INICIAL -->
+  <section class="masthead" id="inicio">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Associação de Defesa Animal</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">Sejam Bem-Vindos</h2>
+          <a class="btn btncolor p-3 px-5 r-1 text-uppercase" href="#sobre" style="--btn-color: #335362">Sobre Nós</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SOBRE -->
+  <section class="min-vh-100" id="sobre" style="padding-top: 30px;">
+    <div class="row justify-content-center d-flex align-items-center flex-row h-100">
+      <h2 class="text-center">Sobre Nós</h2>
+      <div class="imgBox container-fluid row">
+        <div class="col-25 d-flex justify-content-center mx-auto"><img src="assets/img/animais/dog3.jpeg" class="img-fluid" alt="" srcset=""></div>
+        <div class="col-25 d-flex justify-content-center mx-auto"><img src="assets/img/animais/dog3.jpeg" class="img-fluid" alt="" srcset=""></div>
+        <div class="col-25 d-flex justify-content-center mx-auto"><img src="assets/img/animais/dog3.jpeg" class="img-fluid" alt="" srcset=""></div>
+        <div class="col-25 d-flex justify-content-center mx-auto"><img src="assets/img/animais/dog3.jpeg" class="img-fluid" alt="" srcset=""></div>
+        <style>
+          .imgbox div {
+            width: clamp(120px, 250px, 300px);
+          }
+          .imgBox img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+            border: solid 10px #0a1c2a;
+            border-radius: 50%;
+          }
+        </style>
+      </div>
+      <div class="text-justify w-75">
+        <p>Inicialmente a A.D.A começou com um grupo de mulheres com o objetivo de cuidar dos animais. Logo, esse número se tornou crescente, e hoje, eleita como vereadora, Li Carvalho e demais integrantes da Associação, transformaram o abrigo de animais de rua em uma utilidade pública. Os animais que se encontram no abrigo, são cuidados pelas mãos dos integrantes da A.D.A, animais amorosos. dóceis e companheiros. Estão prontos para dar e receber amor, levando alegria para o lar e compartilhando boas memórias.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="min-vh-100"></section> -->
+
+
+
+</body>
+
+</html>
